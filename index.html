@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>คำถาม</h1>
+        <div class="quiz">
+            <h2 id="question1">1. PIM ย่อมาจากอะไร ?</h2>
+            <div>
+                <button class="button" onclick="checkAnswer('a', 1)" id="answer1a">พีไอเอ็ม</button>
+                <button class="button" onclick="checkAnswer('b', 1)" id="answer1b">ปิ๋ม</button>
+                <button class="button" onclick="checkAnswer('c', 1)" id="answer1c">พิม</button>
+                <button class="button" onclick="checkAnswer('d', 1)" id="answer1d">ภีม</button>
+            </div>
+            <br/>
+            <h2 id="result1"></h2>
+        </div>
+        <hr/>
+        <div class="quiz">
+            <h2 id="question2">2. หน่วยงาน GoSoft มีหลัก 4 Attributes ประกอบด้วยอะไรบ้าง ?</h2>
+            <div>
+                <button class="button" onclick="checkAnswer('a', 2)" id="answer2a">Prudence, Justice, Fortitude, Temperance</button>
+                <button class="button" onclick="checkAnswer('b', 2)" id="answer2b">Empathy, Upbeat, Do-ocracy, Lifelong learner</button>
+                <button class="button" onclick="checkAnswer('c', 2)" id="answer2c">Empathy, Upbeat, Justice, Temperance</button>
+                <button class="button" onclick="checkAnswer('d', 2)" id="answer2d">Connection, Teamwork, Upbeat, Do-ocracy</button>
+            </div>
+            <br/>
+            <h2 id="result2"></h2>
+        </div>
+        <hr/>
+        <h2 id="score"></h2>
+        <!-- <p id="score"></p> -->
+    </div>
+    <script src="index.js" charset="UTF-8"></script>
+</body>
+</html>
